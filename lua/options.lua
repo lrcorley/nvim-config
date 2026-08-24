@@ -42,7 +42,7 @@ vim.opt.splitbelow = true
 vim.opt.pumheight = 12
 
 -- Set border style of floating windows
-vim.opt.winborder = 'rounded'
+vim.opt.winborder = 'none'
 vim.api.nvim_set_hl(0, 'FloatBorder', { link = 'NormalFloat' })
 
 vim.api.nvim_create_autocmd('ColorScheme', {
