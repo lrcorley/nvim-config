@@ -19,6 +19,6 @@ return {
       vim.cmd('colorscheme rose-pine')
     end
   },
-  { 'lunacookies/vim-colors-xcode' },
+  'lunacookies/vim-colors-xcode',
   { 'vague-theme/vague.nvim', opts = { italic = false } }
 }
