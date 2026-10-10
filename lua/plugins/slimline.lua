@@ -4,15 +4,35 @@ return {
     spaces = {
       components = '',
       left = '',
-      right = '',
+      right = ''
     },
     sep = {
       hide = {
         first = true,
-        last = true,
+        last = true
       },
       left = "",
-      right = "",
+      right = ""
+    },
+    configs = {
+      mode = {
+        format = {
+          ['n']   = { short = 'NOR' },
+          ['v']   = { short = 'VIS' },
+          ['V']   = { short = 'V-L' },
+          ['\22'] = { short = 'V-B' },
+          ['s']   = { short = 'SEL' },
+          ['S']   = { short = 'S-L' },
+          ['\19'] = { short = 'S-B' },
+          ['i']   = { short = 'INS' },
+          ['R']   = { short = 'REP' },
+          ['c']   = { short = 'CMD' },
+          ['r']   = { short = 'PRO' },
+          ['!']   = { short = 'SHE' },
+          ['t']   = { short = 'TER' },
+          ['U']   = { short = 'UNK' }
+        }
+      }
     }
   }
 }
