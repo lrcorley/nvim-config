@@ -1,3 +1,6 @@
 return {
-  'mattn/emmet-vim'
+  'mattn/emmet-vim',
+  keys = {
+    { '<C-y>', nil, mode = 'i' }
+  }
 }

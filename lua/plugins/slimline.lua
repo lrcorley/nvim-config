@@ -1,5 +1,8 @@
 return {
   'sschleemilch/slimline.nvim',
+  dependencies = {
+    'lewis6991/gitsigns.nvim'
+  },
   opts = {
     spaces = {
       components = '',

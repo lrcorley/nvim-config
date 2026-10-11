@@ -1,7 +1,6 @@
 return {
   'nvim-telescope/telescope.nvim',
   version = '*',
-  lazy = false,
   dependencies = {
     'nvim-lua/plenary.nvim',
     {
@@ -9,18 +8,20 @@ return {
       build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install'
     }
   },
-  opts = {
-    pickers = {
-      colorscheme = {
-        enable_preview = true
-      }
-    }
-  },
-  config = function(_, opts)
+  config = function()
     local telescope = require('telescope')
-    telescope.setup(opts)
+
+    telescope.setup({
+      pickers = {
+        colorscheme = {
+          enable_preview = true
+        }
+      }
+    })
+
     telescope.load_extension('fzf')
   end,
+  cmd = 'Telescope',
   keys = {
     { '<Leader>fg', function() require('telescope.builtin').live_grep() end },
     { '<Leader>ff', function() require('telescope.builtin').find_files() end },

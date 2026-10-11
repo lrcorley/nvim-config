@@ -1,6 +1,10 @@
 return {
-  'rktjmp/lush.nvim',
-  dependencies = {
-    'rktjmp/shipwright.nvim'
+  {
+    'rktjmp/lush.nvim',
+    cmd = { 'Lushify', 'LushImport', 'LushRunTutorial' }
+  },
+  {
+    'rktjmp/shipwright.nvim',
+    cmd = 'Shipwright'
   }
 }

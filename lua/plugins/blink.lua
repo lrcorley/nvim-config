@@ -4,7 +4,12 @@ return {
   dependencies = {
     'saghen/blink.lib'
   },
+  event = 'LspAttach',
   opts = {
+    sources = {
+      default = { 'lsp', 'path', 'snippets' }
+    },
+
     completion = {
       list = { selection = { preselect = false, auto_insert = false } },
       ghost_text = { enabled = true }
