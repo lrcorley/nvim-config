@@ -1,6 +1,7 @@
 return {
   'sschleemilch/slimline.nvim',
   dependencies = {
+    'nvim-mini/mini.icons',
     'lewis6991/gitsigns.nvim'
   },
   opts = {
