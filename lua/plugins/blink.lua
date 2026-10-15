@@ -1,9 +1,7 @@
 return {
   'saghen/blink.cmp',
   version = '1.*',
-  dependencies = {
-    'saghen/blink.lib'
-  },
+  dependencies = { 'saghen/blink.lib' },
   event = 'LspAttach',
   opts = {
     sources = {
@@ -14,6 +12,11 @@ return {
       list = { selection = { preselect = false, auto_insert = false } },
       ghost_text = { enabled = true }
     },
+
+    fuzzy = { implementation = 'prefer_rust_with_warning' },
+
+    signature = { enabled = true },
+    cmdline   = { enabled = false },
 
     keymap = {
       preset = 'none',
@@ -67,10 +70,6 @@ return {
 
         TypeParameter = 'T',
       }
-    },
-
-    fuzzy = { implementation = 'prefer_rust_with_warning' },
-
-    cmdline = { enabled = false }
+    }
   }
 }
