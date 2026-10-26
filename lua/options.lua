@@ -4,6 +4,9 @@ vim.cmd('colorscheme retrobox')
 -- Set leader
 vim.g.mapleader = ' '
 
+-- Set Netrw default listing style to tree
+vim.g.netrw_liststyle = 3
+
 -- Ignore case when searching unless search contains uppercase
 vim.opt.ignorecase = true
 vim.opt.smartcase  = true
